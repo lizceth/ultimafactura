@@ -17,8 +17,18 @@ urlpatterns = patterns(
     url(r'^factura/venta$', 'apps.factura.views.facturaCrear',
         name="factura_venta"),
 
-
-
+    url(r'^clientes$','apps.factura.views.clientes'),
+    url(r'^clienteAdd/$','apps.factura.views.clienteAdd'),
+    url(r'^clienteEdit/(?P<id>\d+)$','apps.factura.views.clienteEdit'),
+    url(r'^clienteDelete/(?P<id>\d+)$','apps.factura.views.clienteDelete'),
+    url(r'^productos/$','apps.factura.views.productos'),
+    url(r'^productoAdd/$','apps.factura.views.productoAdd'),
+    url(r'^productoEdit/(?P<id>\d+)$','apps.factura.views.productoEdit'),
+    url(r'^productoDelete/(?P<id>\d+)$','apps.factura.views.productoDelete'),
+    url(r'^categoria/$','apps.factura.views.categoria'),
+    url(r'^categoriaAdd/$','apps.factura.views.categoriaAdd'),
+    url(r'^categoriaEdit/(?P<id>\d+)$','apps.factura.views.categoriaEdit'),
+    url(r'^categoriaDelete/(?P<id>\d+)$','apps.factura.views.categoriaDelete'),
 
 )
 
@@ -37,7 +47,7 @@ urlpatterns = patterns(
     url(r'^facturacion/buscar_orden$', 'apps.procesos.views.buscarOrdenCompra'),
     url(r'^facturacion/buscar_orden_detalle$', 'apps.procesos.views.buscarOrdenDetalle'),
 
-    url(r'^inventario/consultar$', 'apps.procesos.views.consultarIntentario', name="consultar_inventario"),    
+    url(r'^inventario/consultar$', 'apps.procesos.views.consultarIntentario', name="consultar_inventario"),
 
     url(r'^producto/crear$', 'apps.procesos.views.productoCrear', name="crear_producto"),
 """
