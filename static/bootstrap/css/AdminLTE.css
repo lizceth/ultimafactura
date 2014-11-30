@@ -11,6 +11,19 @@
     Core: General style
 ----------------------------
 */
+
+@font-face {
+  font-family: 'icono-fa';
+  src:url('fonts/icomoon.eot?-ufku63');
+  src:url('fonts/icomoon.eot?#iefix-ufku63') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-ufku63') format('woff'),
+    url('fonts/icomoon.ttf?-ufku63') format('truetype'),
+    url('fonts/icomoon.svg?-ufku63#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html,
 body {
   overflow-x: hidden!important;

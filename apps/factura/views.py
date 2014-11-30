@@ -92,7 +92,7 @@ def productoDelete (request, id):
     return HttpResponseRedirect("/productos")
 
 def categoria(request):
-    productos=CategoriaProducto.objects.all()
+    categoria=CategoriaProducto.objects.all()
     return render(request, 'facturacion/categoria.html',
                       {'categoria':categoria})
 
